@@ -30,7 +30,7 @@
 
 #ifdef __APPLE__
 #define MAP_ANONYMOUS MAP_ANON
-#else
+#elif !defined(__CYGWIN__)
 #define HAVE_MREMAP
 #endif
 
